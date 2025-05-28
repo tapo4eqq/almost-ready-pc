@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютеры до 1.000.000 ₽ - IntelligentPC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+        /* Стили для горизонтального расположения карточек */
+        .support-grid {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .support-card {
+            flex: 0 0 auto;
+            width: 300px;
+            min-height: 380px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Стили для новой структуры */
+        .support-structure {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .support-main {
+            background: rgba(20, 20, 40, 0.7);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #4facfe;
+        }
+        
+        .support-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .status-card {
+            background: rgba(20, 20, 40, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #4facfe;
+        }
+        
+        /* Адаптация */
+        @media (max-width: 768px) {
+            .support-structure {
+                grid-template-columns: 1fr;
+            }
+            
+            .support-grid {
+                flex-wrap: wrap;
+            }
+            
+            .support-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="matrix-bg"></div>
+    
+    <header class="holographic">
+        <div class="header-container">
+            <div class="logo" data-text="IntelligentPC">
+                <a href="index.html" class="glow">IntelligentPC</a>
+                <div class="hologram-effect"></div>
+            </div>
+            
+            <div class="header-right">
+                <div class="contact-info pulse">
+                    <i class="fas fa-phone-alt"></i> 
+                    <span class="neon-text">+7 (962) 910-91-44</span>
+                </div>
+                
+                <nav class="cyber-nav">
+                    <a href="support.html" class="nav-btn">
+                        <i class="fas fa-headset"></i>
+                        <span>Поддержка</span>
+                    </a>
+                    <a href="servers.html" class="nav-btn">
+                        <i class="fas fa-server"></i>
+                        <span>Серверы</span>
+                    </a>
+                    <a href="services.html" class="nav-btn">
+                        <i class="fas fa-cogs"></i>
+                        <span>Услуги</span>
+                    </a>
+                    <a href="cart.html" class="nav-btn cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Корзина</span>
+                        <span class="cart-counter">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="price-category-container">
+            <h1 class="page-title neon-text">КОМПЬЮТЕРЫ ДО 1.000.000 ₽</h1>
+            <p class="page-subtitle">Оптимальные сборки для работы и мультимедиа</p>
+            
+            <div class="price-category-grid">
+                <!-- Карточка 1 -->
+                <div class="price-category-card glass-panel">
+                    <div class="pc-image">
+                        <img src="pic/pc-office.jpg" alt="Офисный компьютер">
+                    </div>
+                    <div class="pc-info">
+                        <h3>DYNAMIC </h3>
+                        <div class="pc-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>RYZEN 9 9950X3D</span>
+                            </div>
+                             <div class="spec-item">
+                                <i class="fas fa-gamepad"></i>
+                                <span>RTX 4090 24GB</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>64GB DDR4</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>2TB SSD + 4TB SSD M2</span>
+                            </div>
+                        </div>
+                        <div class="pc-price">
+                            <span class="price">829 999 ₽</span>
+                            <button class="cyber-button small">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>В КОРЗИНУ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="price-category-card glass-panel">
+                    <div class="pc-image">
+                        <img src="pic/pc-multimedia.jpg" alt="Мультимедийный компьютер">
+                    </div>
+                    <div class="pc-info">
+                        <h3>CHAMPION</h3>
+                        <div class="pc-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>AMD Ryzen 9 9950X3D</span>
+                            </div>
+                             <div class="spec-item">
+                                <i class="fas fa-gamepad"></i>
+                                <span>RTX 4090 24GB</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>128GB DDR5</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>2TB NVMe SSD+2TB SSD M2</span>
+                            </div>
+                        </div>
+                        <div class="pc-price">
+                            <span class="price">889 999 ₽</span>
+                            <button class="cyber-button small">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>В КОРЗИНУ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="price-category-card glass-panel">
+                    <div class="pc-image">
+                        <img src="pic/pc-lightgaming.jpg" alt="Игровой компьютер начального уровня">
+                    </div>
+                    <div class="pc-info">
+                        <h3>AURORA GAMING</h3>
+                        <div class="pc-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Intel Core i9-14900KF</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-gamepad"></i>
+                                <span>RTX 5090 SUPRIM 32GB</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-memory"></i>
+                                <span>128GB DDR5</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                                <i class="fas fa-hdd"></i>
+                                <span>4TB NVMe SSD+2TB SSD M2</span>
+                            </div>
+                        <div class="pc-price">
+                            <span class="price">989 999 ₽</span>
+                            <button class="cyber-button small">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>В КОРЗИНУ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   footer class="cyber-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>КОНТАКТЫ</h3>
+                <div class="footer-contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+7 (962) 910-91-44</span>
+                </div>
+                <div class="footer-contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Москва, Ленинский пр-т 45</span>
+                </div>
+                <div class="footer-contact">
+                    <i class="fas fa-clock"></i>
+                    <span>24/7 доступ</span>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>НАВИГАЦИЯ</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="config.html">Конфигуратор</a></li>
+                    <li><a href="servers.html">Серверы</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>ТЕХНОЛОГИИ</h3>
+                <div class="tech-tags">
+                    <span>AI</span>
+                    <span>Quantum</span>
+                    <span>Neural</span>
+                    <span>VR-ready</span>
+                    <span>Blockchain</span>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>СОЦСЕТИ</h3>
+                <div class="social-grid">
+                    <a href="https://vk.com/magnoliagod" class="social-icon"><i class="fab fa-vk"></i></a>
+                    <a href="https://t.me/magnoliagod" class="social-icon"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/tapo4eqq" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <span>© 2025 INTELLIGENTPC | QUANTUM COMPUTING DIVISION</span>
+                <span id="counter">VISITORS: 0</span>
+            </div>
+            <div class="footer-code">
+                <span>SYSTEM STATUS: <span class="online">ONLINE</span></span>
+                <span>VERSION: 3.1.4</span>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

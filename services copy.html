@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - IntelligentPC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Добавляем новые стили для горизонтального расположения */
+        .services-grid {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .service-card {
+            flex: 0 0 auto;
+            width: 300px; /* Фиксированная ширина карточки */
+            min-height: 400px; /* Минимальная высота для единообразия */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Стили для скролла */
+        .services-grid::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .services-grid::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        .services-grid::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            border-radius: 10px;
+        }
+        
+        /* Адаптация для мобильных устройств */
+        @media (max-width: 768px) {
+            .services-grid {
+                flex-wrap: wrap;
+                overflow-x: visible;
+            }
+            
+            .service-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Остальная часть HTML остается без изменений -->
+    <!-- ... -->
+    
+    <main>
+        <div class="services-container">
+            <h1 class="page-title neon-text">ПРОФЕССИОНАЛЬНЫЕ УСЛУГИ</h1>
+            <p class="page-subtitle">Комплексные решения для вашего бизнеса и дома</p>
+            
+            <div class="services-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="business">Для бизнеса</button>
+                    <button class="tab-btn" data-tab="home">Для дома</button>
+                    <button class="tab-btn" data-tab="other">Другие услуги</button>
+                </div>
+                
+                <div class="tab-content active" id="business">
+                    <div class="services-grid">
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-network-wired"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>ИТ-ИНФРАСТРУКТУРА</h3>
+                            <p>Проектирование и внедрение корпоративной IT-инфраструктуры</p>
+                            <div class="service-price">от 299 999 ₽</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                        
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>КИБЕРБЕЗОПАСНОСТЬ</h3>
+                            <p>Комплексная защита вашего бизнеса от киберугроз</p>
+                            <div class="service-price">от 199 999 ₽</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                        
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-cloud"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>ОБЛАЧНЫЕ РЕШЕНИЯ</h3>
+                            <p>Миграция и настройка облачных сервисов для вашего бизнеса</p>
+                            <div class="service-price">от 149 999 ₽</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="home">
+                    <div class="services-grid">
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-tv"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>УМНЫЙ ДОМ</h3>
+                            <p>Интеграция умных устройств в единую систему управления</p>
+                            <div class="service-price">от 99 999 ₽</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                        
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-gamepad"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>ИГРОВЫЕ СИСТЕМЫ</h3>
+                            <p>Настройка игровых ПК и создание игровых зон</p>
+                            <div class="service-price">от 49 999 ₽</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                        
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-vr-cardboard"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>VR-РЕШЕНИЯ</h3>
+                            <p>Виртуальная реальность для развлечений и обучения</p>
+                            <div class="service-price">от 79 999 ₽</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="other">
+                    <div class="services-grid">
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>ПРОГРАММИРОВАНИЕ</h3>
+                            <p>Разработка программного обеспечения под заказ</p>
+                            <div class="service-price">от 199 999 ₽</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                        
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>ИТ-КОНСАЛТИНГ</h3>
+                            <p>Профессиональные консультации по IT-вопросам</p>
+                            <div class="service-price">от 9 999 ₽/час</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                        
+                        <div class="service-card glass-panel">
+                            <div class="service-icon">
+                                <i class="fas fa-robot"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>AI-ИНТЕГРАЦИЯ</h3>
+                            <p>Внедрение искусственного интеллекта в ваш бизнес</p>
+                            <div class="service-price">от 499 999 ₽</div>
+                            <button class="cyber-button small">
+                                <i class="fas fa-plus"></i>
+                                <span>ЗАКАЗАТЬ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Остальная часть HTML остается без изменений -->
+    <!-- ... -->
+</body>
+</html>
